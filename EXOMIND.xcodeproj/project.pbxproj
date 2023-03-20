@@ -16,6 +16,7 @@
 		08B400CE29C8F3200068EC8C /* EXOMINDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B400CD29C8F3200068EC8C /* EXOMINDUITestsLaunchTests.swift */; };
 		08B400DE29C8FDDB0068EC8C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B400DD29C8FDDB0068EC8C /* CustomButton.swift */; };
 		08B400E229C900F40068EC8C /* WeatherReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B400E129C900F40068EC8C /* WeatherReportView.swift */; };
+		08B400E429C90D770068EC8C /* Get_Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B400E329C90D770068EC8C /* Get_Properties.swift */; };
 		29951E6ED98B11C037C38302 /* Pods_EXOMINDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB8B4856DF0AD5CFD0567A2 /* Pods_EXOMINDTests.framework */; };
 		982FB6A823FBB83538D10D9C /* Pods_EXOMIND.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B24DC31FF1850D9E81D240 /* Pods_EXOMIND.framework */; };
 		F2171A814016DBE22BF98036 /* Pods_EXOMIND_EXOMINDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CD09155E6A0DBD1FF02489 /* Pods_EXOMIND_EXOMINDUITests.framework */; };
@@ -51,6 +52,7 @@
 		08B400CD29C8F3200068EC8C /* EXOMINDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXOMINDUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08B400DD29C8FDDB0068EC8C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		08B400E129C900F40068EC8C /* WeatherReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReportView.swift; sourceTree = "<group>"; };
+		08B400E329C90D770068EC8C /* Get_Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_Properties.swift; sourceTree = "<group>"; };
 		31400D2E9F79FC2C46A979C0 /* Pods-EXOMIND.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EXOMIND.release.xcconfig"; path = "Target Support Files/Pods-EXOMIND/Pods-EXOMIND.release.xcconfig"; sourceTree = "<group>"; };
 		55CD09155E6A0DBD1FF02489 /* Pods_EXOMIND_EXOMINDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EXOMIND_EXOMINDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB1A4F804BF39D48912F62D /* Pods-EXOMINDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EXOMINDTests.debug.xcconfig"; path = "Target Support Files/Pods-EXOMINDTests/Pods-EXOMINDTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		08B400DC29C8FD540068EC8C /* HTTPREQUEST */ = {
 			isa = PBXGroup;
 			children = (
+				08B400E329C90D770068EC8C /* Get_Properties.swift */,
 			);
 			path = HTTPREQUEST;
 			sourceTree = "<group>";
@@ -184,7 +187,6 @@
 				5BB1A4F804BF39D48912F62D /* Pods-EXOMINDTests.debug.xcconfig */,
 				602C845536F935C0529060E0 /* Pods-EXOMINDTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -440,6 +442,7 @@
 				08B400E229C900F40068EC8C /* WeatherReportView.swift in Sources */,
 				08B400B129C8F31F0068EC8C /* EXOMINDApp.swift in Sources */,
 				08B400DE29C8FDDB0068EC8C /* CustomButton.swift in Sources */,
+				08B400E429C90D770068EC8C /* Get_Properties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
