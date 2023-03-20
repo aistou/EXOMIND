@@ -30,7 +30,7 @@ struct WeatherReportView: View {
     var body: some View {
         VStack {
             VStack (spacing: 30){
-                if totalSeconds < 60 && currentPercentage < 100{
+                if totalSeconds < 60{
                     TitleBox
                 } else {
                     Text("Résultats")
@@ -41,11 +41,11 @@ struct WeatherReportView: View {
                         .padding()
                 }
                 
-                if totalSeconds == 60 && currentPercentage == 100{
+                if totalSeconds == 60{
                         ArrayBox
                 }
                
-                if totalSeconds < 60 && currentPercentage < 100{
+                if totalSeconds < 60 {
                     GaugeBox
                     .onAppear {
                      startUpdatingPercentage()
