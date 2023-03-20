@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08B400B129C8F31F0068EC8C /* EXOMINDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B400B029C8F31F0068EC8C /* EXOMINDApp.swift */; };
-		08B400B329C8F31F0068EC8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B400B229C8F31F0068EC8C /* ContentView.swift */; };
+		08B400B329C8F31F0068EC8C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B400B229C8F31F0068EC8C /* WelcomeView.swift */; };
 		08B400B529C8F3200068EC8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B400B429C8F3200068EC8C /* Assets.xcassets */; };
 		08B400B829C8F3200068EC8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B400B729C8F3200068EC8C /* Preview Assets.xcassets */; };
 		08B400C229C8F3200068EC8C /* EXOMINDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B400C129C8F3200068EC8C /* EXOMINDTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		08B400AD29C8F31F0068EC8C /* EXOMIND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EXOMIND.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B400B029C8F31F0068EC8C /* EXOMINDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXOMINDApp.swift; sourceTree = "<group>"; };
-		08B400B229C8F31F0068EC8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08B400B229C8F31F0068EC8C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		08B400B429C8F3200068EC8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B400B729C8F3200068EC8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		08B400BD29C8F3200068EC8C /* EXOMINDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EXOMINDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				08B400B029C8F31F0068EC8C /* EXOMINDApp.swift */,
-				08B400B229C8F31F0068EC8C /* ContentView.swift */,
+				08B400B229C8F31F0068EC8C /* WelcomeView.swift */,
 				08B400B429C8F3200068EC8C /* Assets.xcassets */,
 				08B400B629C8F3200068EC8C /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B400B329C8F31F0068EC8C /* ContentView.swift in Sources */,
+				08B400B329C8F31F0068EC8C /* WelcomeView.swift in Sources */,
 				08B400B129C8F31F0068EC8C /* EXOMINDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
