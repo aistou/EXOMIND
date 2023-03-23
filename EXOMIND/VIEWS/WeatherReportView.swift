@@ -207,7 +207,7 @@ extension WeatherReportView {
     }
     
     func updatePercentage() {
-        // chaque 10 secondes, la jauge doit augmenter de 16.67%
+//         chaque 10 secondes, la jauge doit augmenter de 16.67%
         let increment = 10
         totalSeconds += Double(increment)
 
@@ -219,23 +219,19 @@ extension WeatherReportView {
 
         currentPercentage = (totalSeconds / 60) * 100
 
-        // Appel à l'API pour chaque ville pendant chaque intervalle de 10 secondes
+//         Appel à l'API pour chaque ville pendant chaque intervalle de 10 secondes
         apiCallInterval += increment
         if apiCallInterval >= 60 {
-            // réinitialise la variable apiCallInterval à 0
+//             réinitialise la variable apiCallInterval à 0
             apiCallInterval = 0
         }
-        
         let cities = ["Rennes", "Paris", "Nantes", "Bordeaux", "Lyon"]
         let apiKey = "3a629d79e54f226d5778cb740a6c7a61"
-       let cityIndex = Int(apiCallInterval / increment) - 1
-      //  let cityIndex = (Int(currentPercentage) / 10) - 1 // Récupère l'index de la ville à appeler
-
-       
+        let cityIndex = Int(apiCallInterval / increment) - 1
+    
         if cityIndex >= 0 && cityIndex < cities.count {
             let city = cities[cityIndex]
             Get_Properties(city: city, apiKey: apiKey) { weatherData, icon, error in
-           // Get_Properties(city: city, apiKey: apiKey) { weatherData, error in
                 if let error = error {
                     print("Error fetching weather data for \(city): \(error)")
                     return
@@ -244,19 +240,18 @@ extension WeatherReportView {
                     print("No weather data for \(city)")
                     return
                 }
-                self.cityWeathers.append(weatherData) // Ajout des données météorologiques à cityWeathers
-                    print("Weather data for \(city): \(weatherData)")
-                print("Weather \(cityWeathers)")
-               
+//                 Ajout des données météorologiques à cityWeathers
+                self.cityWeathers.append(weatherData)
+                print("Weather data for \(city): \(weatherData)")
+                print("Weather \(self.cityWeathers)")
             }
         }
-
-        // met à jour la valeur toutes les 10 secondes
+//         met à jour la valeur toutes les 10 secondes
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(increment)) {
             self.updatePercentage()
         }
     }
-  
+    
     func startUpdatingPercentage() {
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(increment)) {
 //             Initialisation de la valeur à 0
