@@ -210,7 +210,7 @@ extension WeatherReportView {
 //         chaque 10 secondes, la jauge doit augmenter de 16.67%
         let increment = 10
         totalSeconds += Double(increment)
-
+        
         if totalSeconds >= 60 {
             currentPercentage = 100
             print("100%")
@@ -219,14 +219,15 @@ extension WeatherReportView {
 
         currentPercentage = (totalSeconds / 60) * 100
 
-//         Appel à l'API pour chaque ville pendant chaque intervalle de 10 secondes
+//        Appel à l'API pour chaque ville pendant chaque intervalle de 10 secondes
         apiCallInterval += increment
         if apiCallInterval >= 60 {
-//             réinitialise la variable apiCallInterval à 0
+//            réinitialise la variable apiCallInterval à 0
             apiCallInterval = 0
         }
         let cities = ["Rennes", "Paris", "Nantes", "Bordeaux", "Lyon"]
         let apiKey = "3a629d79e54f226d5778cb740a6c7a61"
+//        Récupère l'index de la ville à appeler
         let cityIndex = Int(apiCallInterval / increment) - 1
     
         if cityIndex >= 0 && cityIndex < cities.count {
@@ -272,7 +273,7 @@ extension WeatherReportView {
         let calendar = Calendar.current
         let hour = calendar.component(.hour, from: now)
         
-        let isDaytime = hour >= 6 && hour < 20
+        let isDaytime = hour >= 6 && hour < 19
         
         switch weatherDescription {
         case let x where x.contains("clear") && x.contains("cloud"):
